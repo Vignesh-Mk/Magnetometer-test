@@ -25,7 +25,7 @@ public class MagnetometerManagerIOS : MonoBehaviour
         MagnetometerIOS.Start();
     }
 
-    void Oestroy()
+    void OnDestroy()
     {
         MagnetometerIOS.Stop();       
     }
@@ -35,7 +35,7 @@ public class MagnetometerManagerIOS : MonoBehaviour
         Vector3 field = MagnetometerIOS.GetField();
 
         float intensity = field.magnitude;
-        float gaussIntensity = intensity / 100; // 1 ut = 0.01G
+        float gaussIntensity = intensity / 100; // 1 µt = 0.01G
 
         string magnetPolarity;
 

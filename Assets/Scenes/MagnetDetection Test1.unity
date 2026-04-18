@@ -2509,7 +2509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1175924408}
-  - component: {fileID: 1175924409}
+  - component: {fileID: 1175924410}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2532,7 +2532,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1175924409
+--- !u!114 &1175924410
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2541,14 +2541,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1175924406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d886b8525fed3457c9053cef7f083802, type: 3}
+  m_Script: {fileID: 11500000, guid: b7d565dfc5b84e5488fa7b500f186101, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MagnetometerManagerIOS
-  VectorText: {fileID: 1146531980}
-  NorthPoleImage: {fileID: 633071215}
-  SouthPoleImage: {fileID: 1040318770}
-  PolarityText: {fileID: 252626393}
-  IntensityText: {fileID: 314573350}
+  m_EditorClassIdentifier: Assembly-CSharp::MagnetometerManagerAndroid
+  samplingFrequency: 60
+  magnetDetectionThreshold: 50
+  rawMagneticField: {x: 0, y: 0, z: 0}
+  baselineField: {x: 0, y: 0, z: 0}
+  relativeField: {x: 0, y: 0, z: 0}
+  relativeMagnitude: 0
+  detectedPolarity: None
+  isCalibrated: 0
+  MagnetPolarityText: {fileID: 252626393}
+  TextContent: 
 --- !u!1 &1255046428
 GameObject:
   m_ObjectHideFlags: 0
